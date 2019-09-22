@@ -15,7 +15,6 @@ svg {
   left:0;
   right:0;
   overflow:hidden;
-  opacity: 0.8;
 }
 #instructions{
   position:absolute;
@@ -120,6 +119,7 @@ div.transbox p {
   /* text-align: center; */
   font-size: 20px;
   margin-left: 50px;
+  font-weight: 400;
 }
 
 .icon {
@@ -183,7 +183,7 @@ html.modal-active, body.modal-active {
   border-radius: 3px;
   font-weight: 300;
   position: center;
-  width: 30%;
+  width: 45%;
 }
 #modal-container .modal-background .modal h2 {
   font-size: 25px;
@@ -192,7 +192,9 @@ html.modal-active, body.modal-active {
 }
 #modal-container .modal-background .modal p {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 70px;
 }
 #modal-container .modal-background .modal .modal-svg {
   position: absolute;
