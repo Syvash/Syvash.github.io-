@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 html{
   background-color :#000723b3;
@@ -44,11 +45,22 @@ svg {
   color:#565368;
 }
 
+.below {
+  z-index: 10;
+  position: absolute;
+  left: 48%;
+  top: 72%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+
 .title {
   z-index: 10;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 28%;
   transform: translateX(-50%) translateY(-50%);
   font-family: "Montserrat";
   text-align: center;
@@ -71,6 +83,8 @@ svg {
   margin: 0;
   line-height: 1;
 }
+
+
 .title h3 {
   font-weight: 200;
   font-size: 20px;
@@ -97,4 +111,18 @@ div.transbox p {
   margin: 5%;
   font-weight: bold;
   color: #000000;
+}
+
+.isDisabled {
+  color: #000000;
+  /* opacity: 1; */
+  text-decoration: none;
+  /* text-align: center; */
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.icon {
+      vertical-align: -10px;
+      margin-right: 5px;
 }
