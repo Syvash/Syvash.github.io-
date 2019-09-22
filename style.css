@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
 html{
-  background-color :#22222A;
+  background-color :#000723b3;
 }
 svg {
   position: absolute;
@@ -12,6 +14,7 @@ svg {
   left:0;
   right:0;
   overflow:hidden;
+  opacity: 0.8;
 }
 #instructions{
   position:absolute;
@@ -19,7 +22,6 @@ svg {
   bottom:0;
   margin: auto;
   margin-bottom:40px;
-  font-family:'Open Sans', sans-serif;
   color:#167370;
   font-size:.9em;
   text-transform: uppercase;
@@ -33,7 +35,6 @@ svg {
   margin: auto;
   bottom:0;
   margin-bottom:20px;
-  font-family:'Open Sans', sans-serif;
   color:#565368;
   font-size:0.7em;
   text-transform: uppercase;
@@ -41,4 +42,59 @@ svg {
 }
 #credits a {
   color:#565368;
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+
+.title h1 {
+  position: relative;
+  color: #000000;
+  font-weight: 300;
+  font-size: 37px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h2 {
+  font-weight: 600;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h3 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  color: #5e7283;
+  letter-spacing: 2px;
+}
+.title p {
+  font-weight: 200;
+  font-size: 16px;
+  color: #5e7283;
+}
+
+div.transbox {
+  margin: 22%;
+  background-color: rgb(123, 123, 123,0.3);
+  border: 1px solid black;
+  /* top: 10%; */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
