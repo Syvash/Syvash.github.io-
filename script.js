@@ -1,13 +1,4 @@
-/*
-Inspired... copied... stolen from Sarah Drasner's Cow https://codepen.io/sdras/pen/doZReX
 
-It was perfect for a side project I'm working on with @epicwebagency team. So thank you Sarah.
-
-The smoke and stars are dynamically generated. The fire and smoke react to the speed of the rocket.
-
-Illustration by Adeline o'Moreau
-
-*/
 
 
 var illu = document.getElementById("illu");
@@ -189,3 +180,15 @@ function rule3(v,vmin,vmax,tmin, tmax){
   var tv = tmin + (pc*dt);
   return tv;
 }
+
+
+$('.button').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+})
+
+$('#modal-container').click(function(){
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+});
