@@ -127,9 +127,10 @@ div.transbox p {
 }
 
 .icon {
-      vertical-align: -10px;
-      height: 3%;
-      width: 3%;
+    vertical-align: -1rem;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.2rem;
 }
 
 * {
