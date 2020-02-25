@@ -154,6 +154,7 @@ a {
     font-size: 20px;
     font-weight: 400;
     margin: 0vh 4vh 0vh 3vh;
+
 }
 
 a:link, a:hover, a:active 
@@ -304,4 +305,85 @@ a:link, a:hover, a:active
   100% {
     transform: scale(0);
   }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+.below {
+    top: 70%;
+    position: absolute;
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  /* left: 50%; */
+  /* top: 28%; */
+  /* transform: translateX(-50%) translateY(-50%); */
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+  color: #fff;
+  /* font-size: 20px; */
+  top: 25%;
+}
+
+.title h1 {
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h2 {
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+
+.title h3 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  color: #5e7283;
+  letter-spacing: 2px;
+}
+
+.bottom-buttons {
+  text-decoration: none;
+  font-size: 10px;
+  margin-left: 1rem;
+  font-weight: 400;
+}
+
+.icon {
+    vertical-align: -0.25rem;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.2rem;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20%;
+    font-weight: 400;
+    margin: 0;
+}
+
+a:link, a:hover, a:active 
+{
+     color:white; 
+     text-decoration:none; 
+}
+
+
 }
