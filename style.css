@@ -374,7 +374,7 @@ a:link, a:hover, a:active
 a {
     color: white;
     text-decoration: none;
-    font-size: 20%;
+    font-size: 10px;
     font-weight: 400;
     margin: 0;
 }
