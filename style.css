@@ -3,7 +3,7 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 html{
-  background-color :#000723b3;
+  background-color :#000000ed;
 }
 svg {
   position: absolute;
@@ -15,6 +15,13 @@ svg {
   left:0;
   right:0;
   overflow:hidden;
+}
+
+.main-content{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #instructions{
   position:absolute;
@@ -45,14 +52,11 @@ svg {
 }
 
 .below {
-  z-index: 10;
-  position: absolute;
-  left: 51%;
-  top: 72%;
-  transform: translateX(-50%) translateY(-50%);
-  font-family: "Montserrat";
-  text-align: center;
-  width: 60%;
+    width: 100%;
+    top: 70%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
 }
 
 .title {
@@ -64,20 +68,21 @@ svg {
   font-family: "Montserrat";
   text-align: center;
   width: 60%;
+  color: #fff ;
 }
 
 .title h1 {
   position: relative;
-  color: #000000;
+  color: #fff;
   font-weight: 300;
-  font-size: 37px;
+  font-size: 40px;
   padding: 0;
   margin: 0;
   line-height: 1;
 }
 .title h2 {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 80px;
   padding: 0;
   margin: 0;
   line-height: 1;
@@ -112,7 +117,7 @@ div.transbox p {
   color: #000000;
 }
 
-.isDisabled {
+.bottom-buttons {
   color: #000000;
   /* opacity: 1; */
   text-decoration: none;
@@ -125,6 +130,8 @@ div.transbox p {
 .icon {
       vertical-align: -10px;
       margin-right: 5px;
+      height: 5%;
+      width: 5%;
 }
 
 * {
@@ -141,6 +148,17 @@ html, body {
 }
 html.modal-active, body.modal-active {
   overflow: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:link, a:hover, a:active 
+{
+     color:white; 
+     text-decoration:initial; 
 }
 
 #modal-container {
