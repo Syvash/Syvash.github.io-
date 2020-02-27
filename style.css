@@ -60,7 +60,7 @@ svg {
   font-family: "Montserrat";
   text-align: center;
   color: #fff;
-  top: 25%;
+  top: 20%;
 }
 
 .title h1 {
@@ -125,10 +125,18 @@ div.transbox p {
   box-sizing: border-box;
 }
 
-html, body {
+html {
   font-family: Montserrat;
   font-weight: 200;
   margin: 0;
+}
+
+body {
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
 }
 html.modal-active, body.modal-active {
   overflow: hidden;
@@ -291,8 +299,39 @@ a:link, a:hover, a:active
   }
 }
 
-@media (max-device-width: 480px) {
 
+@media only screen and (max-width : 340px){
+
+.title{
+  top:20%;
+}
+
+.title h1 {
+  font-size: 0.85rem;
+}
+.title h2 {
+  font-size: 1.6rem;
+}
+
+.below {
+    width: auto;
+    bottom: 25%;
+}
+
+.bottom-buttons {
+    font-size: 0.4rem;
+}
+
+.icon {
+    vertical-align: -0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+}
+
+
+@media only screen and (min-width: 341px) and (max-width: 480px) {
 
 .title{
   top:25%;
@@ -322,26 +361,51 @@ a:link, a:hover, a:active
     margin-right: 0.2rem;
 }
 
-
 a {
     font-size: 10px;
     margin: 0;
 }
-
-
 
 .below{
   bottom:30%;
   width: auto;
 }
 
+}
 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 
+.title{
+  top:20%;
+}
+
+.title h1 {
+  font-size: 1.3rem;
+}
+.title h2 {
+  font-size: 2.5rem;
+}
+
+.below {
+    width: auto;
+    bottom: 25%;
+}
+
+.icon {
+    vertical-align: -0.75rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.2rem;
+}
+
+.bottom-buttons{
+  font-size:0.8rem;
+}
 
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+@media only screen and (min-width : 768px) and (max-width : 1024px){
 
 .title{
   top:20%;
@@ -357,30 +421,6 @@ a {
 .below {
     width: 80%;
     bottom: 25%;
-}
-
-}
-
-@media only screen and (max-device-width : 340px){
-
-.title{
-  top:20%;
-}
-
-.title h1 {
-  font-size: 0.85rem;
-}
-.title h2 {
-  font-size: 1.6rem;
-}
-
-.below {
-    width: auto;
-    bottom: 25%;
-}
-
-.bottom-buttons {
-    font-size: 0.4rem;
 }
 
 }
