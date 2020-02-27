@@ -17,12 +17,7 @@ svg {
   overflow:hidden;
 }
 
-.main-content{
-display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+.main-content{display: flex;align-items: center;justify-content: center;flex-direction: column;vertical-align: middle;}
 #instructions{
   position:absolute;
   width:100%;
@@ -52,38 +47,34 @@ display: flex;
 }
 
 .below {
-    width: 100%;
-    top: 70%;
-    margin: 0 auto;
+    width: 40%;
     position: absolute;
     text-align: center;
+    bottom: 25%;
+    display: flex;
     justify-content: space-between;
 }
 
 .title {
-  z-index: 10;
   position: absolute;
-  left: 50%;
-  top: 28%;
-  transform: translateX(-50%) translateY(-50%);
   font-family: "Montserrat";
   text-align: center;
-  width: 60%;
-  color: #fff ;
+  color: #fff;
+  top: 25%;
 }
 
 .title h1 {
   position: relative;
   color: #fff;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 2.2rem;
   padding: 0;
   margin: 0;
   line-height: 1;
 }
 .title h2 {
   font-weight: 600;
-  font-size: 80px;
+  font-size: 4.5rem;
   padding: 0;
   margin: 0;
   line-height: 1;
@@ -109,7 +100,6 @@ div.transbox {
   margin: 22%;
   background-color: rgb(123, 123, 123,0.3);
   border: 1px solid black;
-  /* top: 10%; */
 }
 
 div.transbox p {
@@ -120,8 +110,7 @@ div.transbox p {
 
 .bottom-buttons {
   text-decoration: none;
-  font-size: 20px;
-  margin-left: 50px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -137,12 +126,9 @@ div.transbox p {
 }
 
 html, body {
-  min-height: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: top center;
   font-family: Montserrat;
   font-weight: 200;
+  margin: 0;
 }
 html.modal-active, body.modal-active {
   overflow: hidden;
@@ -151,10 +137,8 @@ html.modal-active, body.modal-active {
 a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin: 0vh 4vh 0vh 3vh;
-
 }
 
 a:link, a:hover, a:active 
@@ -307,60 +291,28 @@ a:link, a:hover, a:active
   }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-device-width: 480px) {
 
-.below {
-    top: 70%;
-    position: absolute;
-}
 
-.title {
-  z-index: 10;
-  position: absolute;
-  /* left: 50%; */
-  /* top: 28%; */
-  /* transform: translateX(-50%) translateY(-50%); */
-  font-family: "Montserrat";
-  text-align: center;
-  width: 60%;
-  color: #fff;
-  /* font-size: 20px; */
-  top: 25%;
+.title{
+  top:25%;
 }
 
 .title h1 {
-  position: relative;
-  color: #fff;
-  font-weight: 300;
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
+  font-size: 1.1rem;
 }
+
 .title h2 {
-  font-weight: 600;
-  font-size: 30px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
+  font-size: 1.9rem;
 }
 
 
 .title h3 {
-  font-weight: 200;
   font-size: 20px;
-  padding: 0;
-  margin: 0;
-  line-height: 2;
-  color: #5e7283;
-  letter-spacing: 2px;
 }
-
 .bottom-buttons {
-  text-decoration: none;
   font-size: 10px;
   margin-left: 1rem;
-  font-weight: 400;
 }
 
 .icon {
@@ -372,18 +324,63 @@ a:link, a:hover, a:active
 
 
 a {
-    color: white;
-    text-decoration: none;
     font-size: 10px;
-    font-weight: 400;
     margin: 0;
 }
 
-a:link, a:hover, a:active 
-{
-     color:white; 
-     text-decoration:none; 
+
+
+.below{
+  bottom:30%;
+  width: auto;
 }
 
+
+
+
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+.title{
+  top:20%;
+}
+
+.title h1 {
+  font-size: 1.8rem;
+}
+.title h2 {
+  font-size: 3.5rem;
+}
+
+.below {
+    width: 80%;
+    bottom: 25%;
+}
+
+}
+
+@media only screen and (max-device-width : 340px){
+
+.title{
+  top:20%;
+}
+
+.title h1 {
+  font-size: 0.85rem;
+}
+.title h2 {
+  font-size: 1.6rem;
+}
+
+.below {
+    width: auto;
+    bottom: 25%;
+}
+
+.bottom-buttons {
+    font-size: 0.4rem;
+}
 
 }
