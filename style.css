@@ -62,6 +62,7 @@ svg {
   text-align: center;
   color: #fff;
   top: 20%;
+  z-index:2;
 }
 
 .title h1 {
